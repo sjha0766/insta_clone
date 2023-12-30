@@ -60,6 +60,7 @@ router.get('/profile', isLoggedIn, async (req, res) => {
   const user = await userModel.findOne({ username: req.session.passport.user }).populate('posts');
   res.render('profile', { footer: true, user });
 });
+console.log('hello');
 
 
 
