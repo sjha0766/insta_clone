@@ -61,7 +61,7 @@ router.get('/profile', isLoggedIn, async (req, res) => {
   res.render('profile', { footer: true, user });
 });
 
-
+console.log('hello');
 
 
 router.get('/feed', isLoggedIn, async function(req, res) {
